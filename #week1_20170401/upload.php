@@ -8,7 +8,7 @@
 		for($i=0; $i<count($files["name"]); $i++){
 			if($files["name"][$i] != ""){
 				echo "<br>" . $files["name"][$i];
-				$destination = "../upload/" . $files["name"][$i];
+				$destination = "../uploads/" . $files["name"][$i];
 				move_uploaded_file($files["tmp_name"][$i],$destination);
 			}
 		}
