@@ -1,0 +1,56 @@
+.wrapper{
+	width: 1000px;
+	margin: 10px auto;
+}
+
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+
+.btn, input[type="button"], button{
+	padding: 5px 10px;
+	background: blue;
+	color: #fff;
+	border: 0;
+    border-radius: 3px;
+	margin-bottom: 5px;
+}
+
+.item, .row{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+.view_box{
+	margin: 20px auto;
+	width: 400px;
+	height: 250px;
+	border: 2px solid blue;
+	padding: 15px;
+}
+
+.title{
+	display: block;
+	padding: 10px;
+	text-align: left;
+	font-size: 25px;
+	background: #ccc;
+	margin-bottom: 10px;
+}
+
+#boxA, #boxB{
+	padding: 5px;
+	width: 40%;
+	height: 300px;
+	border: 1px solid blue;
+}
+#control{
+	padding: 5px;
+	margin-left: 10px;
+	display: inline-block;
+}

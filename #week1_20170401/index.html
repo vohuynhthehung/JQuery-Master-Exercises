@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Master</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Exercise 1</div>
+        <div class="view_box">
+            <form name="uploadForm" id="uploadForm" method="post" action="upload.php" enctype="multipart/form-data">
+                <div class="item">
+                    <label>Picture:</label>
+                    <input type="file" name="upload[]" />
+                </div>
+                <input type="button" name="addFile" id="addFile" value="Add File" />
+                <input type="submit" name="submit" value="Upload now" />
+            </form>
+        </div>
+        <div class="title">Exercise 2</div>
+        <div id="boxA" class="fleft">
+            <div class="row">1. Laptop</div>
+            <div class="row">2. iPhone</div>
+            <div class="row">3. Nokia</div>
+            <div class="row">4. Samsung</div>
+            <div class="row">5. Tablet</div>
+        </div>
+        <div id="control">
+            <button type="button" id="moveR">Move right</button>
+            <br>
+            <button type="button" id="moveL">Move left</button>
+        </div>
+        <div id="boxB" class="fright"></div>
+    </div>
+</body>
+
+</html>
