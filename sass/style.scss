@@ -1,3 +1,6 @@
+$primary-color: blue;
+$hover-color: #e0e03c;
+
 .wrapper{
 	width: 1000px;
 	margin: 10px auto;
@@ -11,13 +14,27 @@
 	float: right;
 }
 
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
 .btn, input[type="button"], button{
 	padding: 5px 10px;
-	background: blue;
+	background: $primary-color;
 	color: #fff;
 	border: 0;
     border-radius: 3px;
 	margin-bottom: 5px;
+	cursor: pointer;
+	&:hover{
+		background: $hover-color;
+		color: #fff;
+	}
 }
 
 .item, .row{
@@ -26,11 +43,19 @@
 	margin-bottom: 5px;
 }
 
+.active, .current{
+	background: $hover-color;
+	color: #fff;
+	& > a{
+		color: #fff;
+	}
+}
+
 .view_box{
 	margin: 20px auto;
 	width: 400px;
 	height: 250px;
-	border: 2px solid blue;
+	border: 2px solid $primary-color;
 	padding: 15px;
 }
 
@@ -48,7 +73,7 @@
 	padding: 5px;
 	width: 40%;
 	height: 300px;
-	border: 1px solid blue;
+	border: 1px solid $primary-color;
 }
 #control{
 	padding: 5px;
@@ -59,5 +84,21 @@
 .square30{
 	width: 30px;
 	height: 30px;
-	background: blue;
+	background: $primary-color;
+}
+
+ul.week_list {
+	position: fixed;
+	left: 10px;
+	top: 50%;
+	li{
+		list-style-type: none;
+		&:hover{
+			background: $hover-color;
+			color: #fff;
+			& > a{
+				color: #fff;
+			}
+		}
+	}
 }

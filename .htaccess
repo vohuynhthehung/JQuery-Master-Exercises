@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Compile SCSS file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . sass/compile.php [L]
