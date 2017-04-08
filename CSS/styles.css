@@ -40,7 +40,8 @@
 	text-align: left;
 	font-size: 25px;
 	background: #ccc;
-	margin-bottom: 10px;
+	margin: 10px 0;
+	clear: both;
 }
 
 #boxA, #boxB{
@@ -53,4 +54,10 @@
 	padding: 5px;
 	margin-left: 10px;
 	display: inline-block;
+}
+
+.square30{
+	width: 30px;
+	height: 30px;
+	background: blue;
 }
