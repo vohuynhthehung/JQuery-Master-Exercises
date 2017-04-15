@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
-	debugger;
 	var locationArr = location.href.split('/');
 	var activeWeek;
 	locationArr.forEach(function(v){
@@ -7,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			activeWeek = v;
 		}
 	});
-	var currWeek = 2;
+	var currWeek = 3;
 	var ul=document.createElement('ul');
 	ul.className = "week_list";
 	for (var i=0; i<currWeek; i++){	 
@@ -25,4 +24,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    ul.appendChild(li);
 	}	    
 	document.body.appendChild(ul)
+
+	/*** Create Gototop ***/
+	var gototop=document.createElement('span');
+	gototop.id = "gototop";
+	gototop.innerHTML = "Go Top";
+	document.body.appendChild(gototop);
+
+	document.getElementById("gototop").addEventListener("click", function(){
+		while(document.body.scrollTop > 0){
+			document.body.scrollTop -= 5;
+			console.log(document.body.scrollTop);
+		}
+	})
 });  

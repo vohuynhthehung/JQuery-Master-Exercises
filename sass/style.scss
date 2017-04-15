@@ -1,65 +1,61 @@
 $primary-color: blue;
 $hover-color: #e0e03c;
 
-.wrapper{
+.wrapper {
 	width: 1000px;
 	margin: 10px auto;
 }
-
-.fleft{
+.fleft {
 	float: left;
 }
-
-.fright{
+.fright {
 	float: right;
 }
-
-ul{
+ul {
 	padding: 0;
 	margin: 0;
 }
-
-a{
+a {
 	text-decoration: none;
 }
-
-.btn, input[type="button"], button{
+.text-center{
+	text-align: center;
+}
+.btn, input[type="button"], button {
 	padding: 5px 10px;
 	background: $primary-color;
 	color: #fff;
 	border: 0;
-    border-radius: 3px;
+	border-radius: 3px;
 	margin-bottom: 5px;
 	cursor: pointer;
-	&:hover{
+
+	&:hover {
 		background: $hover-color;
 		color: #fff;
 	}
 }
-
-.item, .row{
+.item, .row {
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 	margin-bottom: 5px;
 }
-
-.active, .current{
+.active, .current {
 	background: $hover-color;
 	color: #fff;
-	& > a{
+
+	& > a {
 		color: #fff;
 	}
 }
-
-.view_box{
+.view_box {
 	margin: 20px auto;
 	width: 400px;
 	height: 250px;
 	border: 2px solid $primary-color;
 	padding: 15px;
 }
-
-.title{
+.title {
 	display: block;
 	padding: 10px;
 	text-align: left;
@@ -68,37 +64,86 @@ a{
 	margin: 10px 0;
 	clear: both;
 }
-
-#boxA, #boxB{
+#boxA, #boxB {
 	padding: 5px;
 	width: 40%;
 	height: 300px;
 	border: 1px solid $primary-color;
 }
-#control{
+#control {
 	padding: 5px;
 	margin-left: 10px;
 	display: inline-block;
 }
-
-.square30{
+.square30 {
 	width: 30px;
 	height: 30px;
 	background: $primary-color;
 }
-
 ul.week_list {
 	position: fixed;
 	left: 10px;
 	top: 50%;
-	li{
+
+	li {
 		list-style-type: none;
-		&:hover{
+
+		&:hover {
 			background: $hover-color;
 			color: #fff;
-			& > a{
+
+			& > a {
 				color: #fff;
 			}
 		}
+	}
+}
+
+/*** Scroll_control ***/
+
+ul#scroll_control {
+	position: fixed;
+	right: 10px;
+	top: 50%;
+
+	li {
+		list-style: none;
+		margin-bottom: 5px;
+		width: 70px;
+
+		input {
+			margin-bottom: 10px;
+		}
+		a {
+			display: block;
+			padding: 2px 5px;
+			background: $primary-color;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+
+			&:hover {
+				background: $hover-color;
+			}
+		}
+	}
+}
+
+/*** End Scroll_control ***/
+
+/*** Gototop button ***/
+span#gototop{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	right: 5px;
+	bottom: 50px;
+	background: $primary-color;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px;
+	&:hover{
+		background: $hover-color;
 	}
 }

@@ -6,34 +6,54 @@ window.onload = function(){
 			target.style.width = target.offsetWidth + "px";
 			target.style.backgroundColor = "#FFC";
 			target.style.position = "absolute";
-			move(target);
+
+		 	var endPos = {xB: boxB.offsetLeft, yB: boxB.offsetTop}
+			move(target, endPos, 'right');
+		} else{
+
+
+			var square30 = document.getElementsByClassname("square30");
+			square30.style.position = "absolute";
+			move(square30);
 		}
 	}
 
-	function move(target){
-		var $boxB = document.getElementById("boxB");
-		 	bOL = boxB.offsetLeft,
-			bOT = boxB.offsetTop,
-			flying = true,
+	function move(flyElement, endPos , derection){
+			var flying = true,
 			moveSize = 5,
-			tmp = bOL - parseFloat(target.offsetLeft);
+			tmp;
+
+			switch (derection){				
+				case 'left':
+					tmp = parseFloat(flyElement.offsetLeft) - endPos.xB;
+					break;
+				case 'right':
+					tmp = endPos.xB - parseFloat(flyElement.offsetLeft);
+					break;
+				case 'top':
+					tmp = parseFloat(objHTML.style.top) - yStop;
+					break;
+				case 'bottom':
+					tmp = yStop - parseFloat(objHTML.style.top);
+					break;
+			}
 
 			if(tmp < moveSize ){
 				moveSize = tmp;
 				flying = false;
 			}
 
-			target.style.top = parseFloat(target.offsetTop) + "px";
-			target.style.left = parseFloat(target.offsetLeft) + moveSize + "px";
+			flyElement.style.top = parseFloat(flyElement.offsetTop) + "px";
+			flyElement.style.left = parseFloat(flyElement.offsetLeft) + moveSize + "px";
 
 			if(flying){
 				setTimeout(function(){ 
-					move(target); 
+					move(flyElement, endPos , derection); 
 				},10);
 			} else {
-				target.style.removeProperty("width");
-				target.style.removeProperty("position");
-				$boxB.appendChild(target);
+				flyElement.style.removeProperty("width");
+				flyElement.style.removeProperty("position");
+				boxB.appendChild(flyElement);
 			}	
 	}
 
@@ -55,7 +75,6 @@ window.onload = function(){
 		var e = event || window.event;
 		var target = e.target != null? e.target: e.srcElement;
 		if(target.parentNode.id == "box"){
-			//debugger;
 			target.style.position 	= "absolute";
 			target.style.background 	= "red";
 			target.style.left  	= target.offsetLeft;

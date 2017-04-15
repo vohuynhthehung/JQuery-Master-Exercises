@@ -19,4 +19,15 @@ Các đối tương di chuyển (hiệu ứng) từ boxA -> boxB
 + Bài tập 3: 
 Chọn đối tượng và kéo đến bất kỳ vị trí trên màn hình
 
+*** Chapter 8 - BOM ***
+
+// Week3_20170415 -- JS Cookie & JS History
+
++ JS Cookie: 
+	1. Dùng cookie lưu thông tin của khách viếng thăm, lần truy cập sau sẽ xuất hiện lời chào
+	2. Thống kê số lần truy cập
+	3. Lưu trữ thông tin được nhập bởi người dùng vào các ô input
++ JS History
+	Back, Next đến các trang truy cập trước & sau đó.
+
 

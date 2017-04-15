@@ -1,4 +1,4 @@
-<?
+<?php
 include('scssphp/scss.inc.php');
 use Leafo\ScssPhp\Server;
 use Leafo\ScssPhp\Compiler;

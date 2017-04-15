@@ -1,0 +1,163 @@
+/* compiled by scssphp v0.3.3 on Sat, 15 Apr 2017 17:15:14 +0200 (0.036s) */
+
+/* line 4, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.wrapper {
+  width: 1000px;
+  margin: 10px auto;
+}
+/* line 8, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.fleft {
+  float: left;
+}
+/* line 11, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.fright {
+  float: right;
+}
+/* line 14, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 18, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+a {
+  text-decoration: none;
+}
+/* line 21, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.text-center {
+  text-align: center;
+}
+/* line 24, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.btn, input[type="button"], button {
+  padding: 5px 10px;
+  background: blue;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+/* line 33, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.btn:hover, input[type="button"]:hover, button:hover {
+  background: #e0e03c;
+  color: #fff;
+}
+/* line 38, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.item, .row {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+/* line 43, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.active, .current {
+  background: #e0e03c;
+  color: #fff;
+}
+/* line 47, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.active > a, .current > a {
+  color: #fff;
+}
+/* line 51, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.view_box {
+  margin: 20px auto;
+  width: 400px;
+  height: 250px;
+  border: 2px solid blue;
+  padding: 15px;
+}
+/* line 58, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.title {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  background: #ccc;
+  margin: 10px 0;
+  clear: both;
+}
+/* line 67, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+#boxA, #boxB {
+  padding: 5px;
+  width: 40%;
+  height: 300px;
+  border: 1px solid blue;
+}
+/* line 73, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+#control {
+  padding: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+/* line 78, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+.square30 {
+  width: 30px;
+  height: 30px;
+  background: blue;
+}
+/* line 83, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul.week_list {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+}
+/* line 88, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul.week_list li {
+  list-style-type: none;
+}
+/* line 91, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul.week_list li:hover {
+  background: #e0e03c;
+  color: #fff;
+}
+/* line 95, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul.week_list li:hover > a {
+  color: #fff;
+}
+/*** Scroll_control ***/
+/* line 104, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul#scroll_control {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+}
+/* line 109, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul#scroll_control li {
+  list-style: none;
+  margin-bottom: 5px;
+  width: 70px;
+}
+/* line 114, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul#scroll_control li input {
+  margin-bottom: 10px;
+}
+/* line 117, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul#scroll_control li a {
+  display: block;
+  padding: 2px 5px;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 125, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+ul#scroll_control li a:hover {
+  background: #e0e03c;
+}
+/*** End Scroll_control ***/
+/*** Gototop button ***/
+/* line 135, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+span#gototop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+/* line 146, D:/xamp/htdocs/JQuery-Master-Exercises/sass\style.scss */
+span#gototop:hover {
+  background: #e0e03c;
+}
