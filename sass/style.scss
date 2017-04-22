@@ -21,6 +21,14 @@ a {
 .text-center{
 	text-align: center;
 }
+.text-color{
+	&.primary{
+		color: $primary-color;
+	}
+	&.red{
+		color: red;
+	}
+}
 .btn, input[type="button"], button {
 	padding: 5px 10px;
 	background: $primary-color;
