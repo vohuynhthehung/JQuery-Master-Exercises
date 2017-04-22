@@ -34,4 +34,16 @@ Chọn đối tượng và kéo đến bất kỳ vị trí trên màn hình
 - JS History
 	Back, Next đến các trang truy cập trước & sau đó.
 
+`Week4_20170422 -- JS Navigator`
+
+- Bài tập 1:
+Xác định trình duyệt đang truy cập
+
+- Bài tập 2:
+Xac định ngôn ngữ được thiết lập bởi trình duyệt
+
+- Bài tập 3: 
+Kiểm tra trình duyệt đã cài plugin "Shockwave Flash" hay chưa?
+
+
 
