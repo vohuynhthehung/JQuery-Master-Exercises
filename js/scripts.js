@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			activeWeek = v;
 		}
 	});
-	var currWeek = 4;
+	var currWeek = 5;
 	var ul=document.createElement('ul');
 	ul.className = "week_list";
 	for (var i=0; i<currWeek; i++){	 

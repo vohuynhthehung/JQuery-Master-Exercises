@@ -22,6 +22,9 @@ a {
 	text-align: center;
 }
 .text-color{
+	&:hover{
+		color: $hover-color;
+	} 
 	&.primary{
 		color: $primary-color;
 	}
