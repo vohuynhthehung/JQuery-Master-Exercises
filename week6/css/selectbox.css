@@ -1,0 +1,27 @@
+/* CSS Document */
+#appForm{
+	border: 2px solid #999;
+	padding: 10px;
+	margin: 10px;	
+}
+
+#appForm > div{
+	padding: 5px;
+	margin-bottom: 10px;	
+}
+
+#appForm label{
+	width: 80px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#appForm .input{
+	padding: 3px;
+	border: solid 1px #999;	
+}
+
+#appForm .w200{
+	width: 200px;
+}

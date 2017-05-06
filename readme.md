@@ -47,7 +47,10 @@ Kiểm tra trình duyệt đã cài plugin "Shockwave Flash" hay chưa?
 
 `Week5_20170429 -- Ứng dụng với Jquery`
 
-- Bài tập 1: Tooltip
+- Bài tập: Tooltip
+
+`Week6_20170506 -- Ứng dụng với Jquery`
+- Bài tập: Selectbox
 
 
 
