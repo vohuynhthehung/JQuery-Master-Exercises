@@ -14,36 +14,40 @@ $hover-color: #e0e03c;
 ul {
 	padding: 0;
 	margin: 0;
+	li{
+		list-style-type: none;
+		cursor: pointer;
+	}
 }
 a {
 	text-decoration: none;
 }
-label{
+label {
 	font-weight: bold;
-	display: block;;
+	display: block;
 	margin-bottom: 10px;
-} 
-select{
+}
+select {
 	border: 0;
 	width: 100%;
-} 
-.text-center{
+}
+.text-center {
 	text-align: center;
 }
-.text-color{
-	&:hover{
+.text-color {
+	&:hover {
 		color: $hover-color;
-	} 
-	&.primary{
+	}
+	&.primary {
 		color: $primary-color;
 	}
-	&.red{
+	&.red {
 		color: red;
 	}
 }
-.margin-btm20{
+.margin-btm20 {
 	margin-bottom: 20px !important;
-} 
+}
 .btn, input[type="button"], button {
 	padding: 5px 10px;
 	background: $primary-color;
@@ -58,11 +62,24 @@ select{
 		color: #fff;
 	}
 }
-.item, .row {
+.item, .row, ul.chosen > li {
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 	margin-bottom: 5px;
 }
+
+ul.chosen{
+	li{
+		&:hover{
+			border-color: $primary-color;
+		}
+		a{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
 .active, .current {
 	background: $hover-color;
 	color: #fff;
@@ -123,7 +140,6 @@ ul.week_list {
 }
 
 /*** Scroll_control ***/
-
 ul#scroll_control {
 	position: fixed;
 	right: 10px;
@@ -154,8 +170,41 @@ ul#scroll_control {
 
 /*** End Scroll_control ***/
 
+/* Autocomplete */
+#autocomplete {
+	input#keywords {
+		color: rgb(153, 153, 153);
+		font-style: italic;
+		width: 100%;
+		height: 25px;
+	}
+	.results {
+		border: 1px solid #ccc;
+		display: none;
+
+		ul {
+			list-style: none inside;
+			margin: 10px;
+
+			& > li {
+				padding: 4px;
+				border-bottom: solid 1px #ccc;
+				white-space: nowrap;
+				overflow: hidden;
+
+				&.hover-bg {
+					background-color: $primary-color;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+/* End Autocomplete */
+
 /*** Gototop button ***/
-span#gototop{
+span#gototop {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -166,7 +215,8 @@ span#gototop{
 	color: #fff;
 	cursor: pointer;
 	padding: 5px;
-	&:hover{
+
+	&:hover {
 		background: $hover-color;
 	}
 }

@@ -5,9 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="cache-control" content="no-cache" />
 <title>Multi Selectbox example</title>
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="/JQuery-Master-Exercises/css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="../js/scripts.js" type="text/javascript"></script>
+ <script src="/JQuery-Master-Exercises/js/scripts.js" type="text/javascript"></script>
 <script src="js/cities.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(e) {
@@ -59,7 +59,7 @@
 <body>
 <div class="wrapper">
         <div id="content">
-        	<div class="title">Selectbox</div>
+        	<div class="title"><a href="/JQuery-Master-Exercises/week6/">Week 6 / </a> Selectbox</div>
             <div class="view_box">             
              <form name="appForm" id="appForm" method="POST" action="test.php"><label>City: </label>
              	<div class="item margin-btm20">

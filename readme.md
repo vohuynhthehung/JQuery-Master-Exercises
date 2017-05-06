@@ -50,7 +50,8 @@ Kiểm tra trình duyệt đã cài plugin "Shockwave Flash" hay chưa?
 - Bài tập: Tooltip
 
 `Week6_20170506 -- Ứng dụng với Jquery`
-- Bài tập: Selectbox
+- Bài tập 1: Selectbox
+- Bài tập 1: Autocomplete
 
 
 

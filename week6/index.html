@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/scripts.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h4 class="title">Exercises Week6</h4>
+        <div class="view_box">
+            <ul class="chosen">
+                <li><a href="/" name="selectbox">Selectbox</a></li>
+                <li><a href="/" name="autocomplete">Autocomplete</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.chosen li').click(function(e){
+                debugger;
+                e.preventDefault();
+                var path = window.location.pathname + $(this).find('a').attr("name");
+                //window.redirect(path);
+                window.location.href = path;
+            })
+        })
+    </script>
+</body>
+
+</html>
