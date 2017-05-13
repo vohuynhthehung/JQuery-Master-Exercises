@@ -51,7 +51,10 @@ Kiểm tra trình duyệt đã cài plugin "Shockwave Flash" hay chưa?
 
 `Week6_20170506 -- Ứng dụng với Jquery`
 - Bài tập 1: Selectbox
-- Bài tập 1: Autocomplete
+- Bài tập 2: Autocomplete
+
+`Week7_20170513 -- Ứng dụng với Jquery`
+- Bài tập: Ajax Paging
 
 
 

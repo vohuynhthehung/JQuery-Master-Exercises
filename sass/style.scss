@@ -94,6 +94,10 @@ ul.chosen{
 	height: 250px;
 	border: 2px solid $primary-color;
 	padding: 15px;
+	&.full_width{
+		padding: 0;
+		width: 100%;
+	}
 }
 .title {
 	display: block;
