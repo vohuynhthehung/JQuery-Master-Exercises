@@ -1,0 +1,85 @@
+/* CSS Document */
+
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	position: relative;
+}
+
+.clr{
+	clear: both;	
+}
+
+.left{
+	float: left;	
+}
+
+.input{
+	padding: 3px;
+	border: solid 1px #333;	
+}
+
+.button{
+	font-size: 12px;
+	padding: 3px;
+	border: solid 1px #333;	
+}
+
+.boxA{
+	width: 600px;
+	height: 200px;
+	padding: 10px;
+	margin: 20px auto;
+	border: solid 2px #F00;	
+}
+
+.boxA div{
+	padding: 3px;	
+	border: solid 1px #999;
+	margin-bottom: 5px;
+}
+
+.item{
+	border: solid 1px #999;
+	padding: 3px;
+	margin-bottom: 5px;	
+	display:block;
+}
+
+
+.bg01{
+	background-color: #FF9;	
+}
+
+.bg02{
+	background-color: #CFC;
+}
+
+.box{
+	height: 200px;
+	width: 200px;
+	padding: 5px;
+	margin: 20px auto;
+	border: 3px solid #090;	
+	text-align: center;
+	font-size: 20px;
+}
+
+.info{
+	width: 600px;
+	padding: 10px;
+	margin: 20px auto;
+	border: solid 2px #999;	
+}
+
+
+.txtError{
+	color: red;
+	font-style:italic;	
+}
+
+
+
+
+

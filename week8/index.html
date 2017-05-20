@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Callbacks Object</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="js/call.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$("#process").click(function(e) {	
+			var arr = ["HTML","CSS","JS","jQuery"];
+			var callbacks = $.Callbacks(); 
+			
+			callbacks.add(addDiv).fire("#boxA",arr).empty()
+					 .add(changeColor).fire("#boxA","bg01","bg02");
+					 
+        });
+		
+		
+		
+	});
+</script>
+
+</head>
+
+<body>
+	<center>
+    	<h1>
+         callbacks.locked()
+       </h1>
+    </center>
+    
+    <div id="info" class="info">Ready...</div>
+    <div id="boxA" class="boxA">Ready...</div>
+   	
+    <center>
+    	<input type="button" class="button" id="process" value="Process"/>
+    </center>
+    
+</body>
+
+</html>
