@@ -56,5 +56,9 @@ Kiểm tra trình duyệt đã cài plugin "Shockwave Flash" hay chưa?
 `Week7_20170513 -- Ứng dụng với Jquery`
 - Bài tập: Ajax Paging
 
+`Week7_20170513 -- Jquery toàn tập - Core`
+- Bài tập: Callback
+
+
 
 
